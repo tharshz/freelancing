@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
 
 
-app.get('/', ()=>{
+app.get('/', (req,res)=>{
     res.send('welcome to my forma');
 })
 
