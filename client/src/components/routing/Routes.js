@@ -14,16 +14,18 @@ import Post from '../post/Post';
 import NotFound from '../layout/NotFound';
 import PrivateRoute from '../routing/PrivateRoute';
 import contact from '../profile/contact'
+import About from '../layout/About';
 
 const Routes = props => {
   return (
-    <section className="container">
+    <section>
       <Alert />
       <Switch>
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/profiles" component={Profiles} />
-        <Route exact path="/profile/:id" component={Profile} />
+        <Route exact path="/About" component={About} />
+        <PrivateRoute exact path="/profiles" component={Profiles} />
+        <PrivateRoute exact path="/profile/:id" component={Profile} />
         <PrivateRoute exact path="/contact" component={contact} />
         <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <PrivateRoute exact path="/create-profile" component={ProfileForm} />

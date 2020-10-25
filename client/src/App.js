@@ -30,6 +30,7 @@ const App = () => {
   }, []);
 
   return (
+    <div>
     <Provider store={store}>
       <Router>
         <Fragment>
@@ -37,12 +38,12 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route component={Routes} />
-          
           </Switch>
-          <Footer/>
         </Fragment>
       </Router>
     </Provider>
+    <Footer/>
+      </div>
   );
 };
 

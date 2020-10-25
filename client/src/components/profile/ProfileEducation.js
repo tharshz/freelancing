@@ -6,7 +6,7 @@ import moment from 'moment';
 const ProfileEducation = ({
   education: { school, degree, fieldofstudy, current, to, from, description }
 }) => (
-  <div>
+  <div className='Freelance__Detail__about__Component__Div p-2 text-center'>
     <h3 className="text-dark">{school}</h3>
     <p>
       <Moment format="YYYY/MM/DD">{moment.utc(from)}</Moment> -{' '}

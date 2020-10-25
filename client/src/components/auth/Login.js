@@ -25,38 +25,58 @@ const Login = ({ login, isAuthenticated }) => {
   }
 
   return (
+    <div className="container-fluid">
     <Fragment>
-      <h1 className="large text-primary">Sign In</h1>
-      <p className="lead">
-        <i className="fas fa-user" /> Sign Into Your Account
-      </p>
-      <form className="form" onSubmit={onSubmit}>
-        <div className="form-group">
-          <input
-            type="email"
-            placeholder="Email Address"
-            name="email"
-            value={email}
-            onChange={onChange}
-            required
-          />
+    <div className="row">
+
+      <div className="col-lg-6 Login__Page__Col-6__Left">
+     <h1 className="Login__Page__Left__Col__Text1">Now Freelancing<br/>Easy With<br/>SEDORK </h1>
         </div>
-        <div className="form-group">
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            value={password}
-            onChange={onChange}
-            minLength="6"
-          />
-        </div>
-        <input type="submit" className="btn btn-primary" value="Login" />
-      </form>
-      <p className="my-1">
-        Don't have an account? <Link to="/register">Sign Up</Link>
-      </p>
+      
+     
+      <div className="col-lg-6">
+      <div className="container my__Signin__Cont">
+      <h3 className="my__Signin__Head">Sign In</h3>
+     
+     <form className="form" onSubmit={onSubmit}>
+       <div className="form-group">
+         <input
+           type="email"
+           className="form-control"
+           placeholder="Email Address"
+           name="email"
+           value={email}
+           onChange={onChange}
+           required
+         />
+       </div>
+       <div className="form-group">
+         <input
+           type="password"
+           className="form-control"
+           placeholder="Password"
+           name="password"
+           value={password}
+           onChange={onChange}
+           minLength="6"
+         />
+       </div>
+       <input type="submit" className="btn btn-primary my__Btn2 btn-block" value="Let's Signin" />
+       </form>
+     
+    
+    
+     <p className="my__Signin__Botom__Text">
+       Don't have an account? <Link className="my__Signin__Link" to="/register">Sign Up</Link>
+     </p>
+      </div>
+        
+      </div>
+        
+      </div>
     </Fragment>
+     </div>
+     
   );
 };
 

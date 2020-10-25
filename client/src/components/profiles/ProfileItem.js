@@ -12,29 +12,51 @@ const ProfileItem = ({
   }
 }) => {
   return (
-    <div className='profile bg-light'>
-      <img src={avatar} alt='' className='round-img' />
-      <div>
-        <h2>{name}</h2>
-        <p>
+ <div className="container">
+      <div className="row">
+      <div className="col-lg-2">
+
+      </div>
+
+      <div className="col-lg-8">
+      <div className='Freelance__Profile__BG bg-light'>
+      <div className="row">
+      <div className="col-lg-3">
+      <img src={avatar} alt='' className='Freelance__Round-Img' />
+      </div>
+      <div className="col-lg-9 Freelance__Profile__Detail">
+        <h3 className="Freelance__Name">{name}</h3>
+        <p className="Freelance__Work__Status">
           {status} {company && <span> at {company}</span>}
         </p>
-        <p className='my-1'>{location && <span>{location}</span>}</p>
-        <Link to={`/profile/${_id}`} className='btn btn-primary'>
+        <div>
+        {skills.slice(0, 4).map((skill, index) => (
+          <p key={index} className='badge Freelance__Skill__Tags'>
+            <i className='fas fa-check' /> {skill}
+          </p>
+        ))}
+      </div>
+        <p >From {location && <span className='Freelance__Location'>{location}</span>}</p>
+        <div className="float-right Freelance__Button__div">
+        <Link to={`/profile/${_id}`} className='btn btn-primary Freelance__Button'>
           View Profile
         </Link>
-        <Link to={`/contact`} className='btn btn-primary my_bt'>
+        <Link to={`/contact`} className='btn btn-primary Freelance__Button'>
           Hire Me
         </Link>
+        </div>
       </div>
-      <ul>
-        {skills.slice(0, 4).map((skill, index) => (
-          <li key={index} className='text-primary'>
-            <i className='fas fa-check' /> {skill}
-          </li>
-        ))}
-      </ul>
+      
+      </div>
     </div>
+          </div>
+
+
+      <div className="col-lg-2">
+
+      </div>
+      </div>
+ </div>
   );
 };
 

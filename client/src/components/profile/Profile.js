@@ -16,7 +16,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
   }, [getProfileById, match.params.id]);
 
   return (
-    <Fragment>
+    <div className="container">
       {profile === null ? (
         <Spinner />
       ) : (
@@ -35,7 +35,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
             <ProfileTop profile={profile} />
             <ProfileAbout profile={profile} />
             <div className="profile-exp bg-white p-2">
-              <h2 className="text-primary">Experience</h2>
+              <h2 className="text-primary text-center">Experience</h2>
               {profile.experience.length > 0 ? (
                 <Fragment>
                   {profile.experience.map((experience) => (
@@ -51,7 +51,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
             </div>
 
             <div className="profile-edu bg-white p-2">
-              <h2 className="text-primary">Education</h2>
+              <h2 className="text-primary text-center">Education</h2>
               {profile.education.length > 0 ? (
                 <Fragment>
                   {profile.education.map((education) => (
@@ -72,7 +72,7 @@ const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
           </div>
         </Fragment>
       )}
-    </Fragment>
+    </div>
   );
 };
 

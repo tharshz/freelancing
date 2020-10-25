@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, {useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -21,8 +21,14 @@ const AddExperience = ({ addExperience, history }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   return (
-    <Fragment>
-      <h1 className="large text-primary">Add An Experience</h1>
+    <div className="container mt-5 mb-5">
+      <div className="row">
+          <div className="col-lg-2">
+
+          </div>
+
+          <div className="col-lg-8">
+          <h1 className="large text-primary">Add An Experience</h1>
       <p className="lead">
         <i className="fas fa-code-branch" /> Add any freelancer/Experience
         positions that you have had in the past
@@ -42,6 +48,7 @@ const AddExperience = ({ addExperience, history }) => {
             name="title"
             value={title}
             onChange={onChange}
+            className="form-control"
             required
           />
         </div>
@@ -52,6 +59,7 @@ const AddExperience = ({ addExperience, history }) => {
             name="company"
             value={company}
             onChange={onChange}
+            className="form-control"
             required
           />
         </div>
@@ -62,11 +70,12 @@ const AddExperience = ({ addExperience, history }) => {
             name="location"
             value={location}
             onChange={onChange}
+            className="form-control"
           />
         </div>
         <div className="form-group">
           <h4>From Date</h4>
-          <input type="date" name="from" value={from} onChange={onChange} />
+          <input type="date" name="from" value={from} onChange={onChange} className="form-control" />
         </div>
         <div className="form-group">
           <p>
@@ -75,6 +84,7 @@ const AddExperience = ({ addExperience, history }) => {
               name="current"
               checked={current}
               value={current}
+              className="checkbox-light"
               onChange={() => {
                 setFormData({ ...formData, current: !current });
               }}
@@ -88,6 +98,7 @@ const AddExperience = ({ addExperience, history }) => {
             type="date"
             name="to"
             value={to}
+            className="form-control"
             onChange={onChange}
             disabled={current}
           />
@@ -95,19 +106,24 @@ const AddExperience = ({ addExperience, history }) => {
         <div className="form-group">
           <textarea
             name="description"
-            cols="30"
-            rows="5"
+            className="form-control"
             placeholder="Job Description"
             value={description}
             onChange={onChange}
           />
         </div>
-        <input type="submit" className="btn btn-primary my-1" />
-        <Link className="btn btn-light my-1" to="/dashboard">
+        <input type="submit" className="btn btn-primary Freelance__Forum__Butoon ml-2" />
+        <Link className="btn btn-light Freelance__Forum__Butoon ml-2" to="/dashboard">
           Go Back
         </Link>
       </form>
-    </Fragment>
+          </div>
+          
+          <div className="col-lg-2">
+              
+          </div>
+      </div>
+    </div>
   );
 };
 

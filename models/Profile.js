@@ -57,34 +57,34 @@ const ProfileSchema = new mongoose.Schema({
       }
     }
   ],
-  contact:[{
-    fullname:{
-      type:String,
-      required:true
-  },
-  phonenumber:{
-      type:String,
-      required:true
-  },
+  // contact:[{
+  //   fullname:{
+  //     type:String,
+  //     required:true
+  // },
+  // phonenumber:{
+  //     type:String,
+  //     required:true
+  // },
 
-  email:{
-      type:String,
-      required:true,
-      unique:true
-  },
-  title: {
-     type: String,
-     required: true
-   },
-   description: {
-     type: String,
-     required: true
-   },
-   date: {
-     type: Date,
-     default: Date.now
-   } 
-  }],
+  // email:{
+  //     type:String,
+  //     required:true,
+  //     unique:true
+  // },
+  // title: {
+  //    type: String,
+  //    required: true
+  //  },
+  //  description: {
+  //    type: String,
+  //    required: true
+  //  },
+  //  date: {
+  //    type: Date,
+  //    default: Date.now
+  //  } 
+  
   education: [
     {
       school: {

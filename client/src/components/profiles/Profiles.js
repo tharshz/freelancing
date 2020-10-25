@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
@@ -11,16 +11,15 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   }, [getProfiles]);
 
   return (
-    <Fragment>
+      <div className="container">
       {loading ? (
         <Spinner />
       ) : (
-        <Fragment>
-          <h1 className='large text-primary'>Freelancers</h1>
-          <p className='lead'>
-            <i className='fab fa-connectdevelop' /> Browse and connect with
-            Freelancers
-          </p>
+        <div>
+          <div class="jumbotron Freelance__Jumbotron">
+            <h1 class="Freelancer__Page__Jumbotron__Head">Pick the <br/> best one for <br/>your projects</h1>
+          </div>
+<div className="container">
           <div className='profiles'>
             {profiles.length > 0 ? (
               profiles.map(profile => (
@@ -34,9 +33,10 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
             )}
             
           </div>
-        </Fragment>
+        </div>
+          </div>
       )}
-    </Fragment>
+    </div>
   );
 };
 

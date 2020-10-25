@@ -9,8 +9,8 @@ const ProfileGithub = ({ username, getGithubRepos, repos }) => {
   }, [getGithubRepos, username]);
 
   return (
-    <div className="profile-github">
-      <h2 className="text-primary my-1">Github Repos</h2>
+    <div className='Freelance__Detail__about__Component__Div p-2 text-center'>
+      <h2 className="text-primary">Github Repos</h2>
       {repos.map(repo => (
         <div key={repo.id} className="repo bg-white p-1 my-1">
           <div>

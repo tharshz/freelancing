@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, {useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -29,8 +29,14 @@ const AddEducation = ({ addEducation, history }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   return (
-    <Fragment>
-      <h1 className="large text-primary">Add Your Education</h1>
+    <div className="container mt-5 mb-5">
+      <div className="row">
+        <div className="col-lg-2">
+
+        </div>
+
+        <div classNam="col-lg-8">
+        <h1 className="large text-primary">Add Your Education</h1>
       <p className="lead">
         <i className="fas fa-code-branch" /> Add any school or bootcamp that you
         have attended
@@ -50,6 +56,7 @@ const AddEducation = ({ addEducation, history }) => {
             name="school"
             value={school}
             onChange={onChange}
+            className="form-control"
             required
           />
         </div>
@@ -60,6 +67,7 @@ const AddEducation = ({ addEducation, history }) => {
             name="degree"
             value={degree}
             onChange={onChange}
+            className="form-control"
             required
           />
         </div>
@@ -70,11 +78,13 @@ const AddEducation = ({ addEducation, history }) => {
             name="fieldofstudy"
             value={fieldofstudy}
             onChange={onChange}
+            className="form-control"
           />
         </div>
         <div className="form-group">
           <h4>From Date</h4>
-          <input type="date" name="from" value={from} onChange={onChange} />
+          <input type="date" name="from" value={from} 
+            className="form-control" onChange={onChange} />
         </div>
         <div className="form-group">
           <p>
@@ -83,6 +93,7 @@ const AddEducation = ({ addEducation, history }) => {
               name="current"
               checked={current}
               value={current}
+              className="checkbox-light"
               onChange={() => setFormData({ ...formData, current: !current })}
             />{' '}
             Current School
@@ -96,6 +107,7 @@ const AddEducation = ({ addEducation, history }) => {
             value={to}
             onChange={onChange}
             disabled={current}
+            className="form-control"
           />
         </div>
         <div className="form-group">
@@ -106,14 +118,21 @@ const AddEducation = ({ addEducation, history }) => {
             placeholder="Program Description"
             value={description}
             onChange={onChange}
+            className="form-control"
           />
         </div>
-        <input type="submit" className="btn btn-primary my-1" />
-        <Link className="btn btn-light my-1" to="/dashboard">
+        <input type="submit" className="btn mt-1 Freelance__Forum__Butoon mr-2" />
+        <Link className="btn mt-1 Freelance__Forum__Butoon mr-2" to="/dashboard">
           Go Back
         </Link>
       </form>
-    </Fragment>
+        </div>
+
+        <div className="col-lg-2">
+
+        </div>
+      </div>
+    </div>
   );
 };
 

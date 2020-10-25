@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "freelancing web site",
   "main": "server.js",
+  "engines": {
+    "node":"10.19.0",
+    "npm":"6.14.8"
+  },
   "scripts": {
     "start": "node server",
     "server": "nodemon server",

@@ -7,12 +7,13 @@ const PostForm = ({ addPost }) => {
   const [text, setText] = useState('');
 
   return (
+    <div className='container'>
     <div className='post-form'>
-      <div className='bg-primary p'>
-        <h3>Say Something...</h3>
+      <div className=''>
+        <h3 className="text-primary">Start a Discussion topic.</h3>
       </div>
       <form
-        className='form my-1'
+        className='form'
         onSubmit={e => {
           e.preventDefault();
           addPost({ text });
@@ -21,15 +22,15 @@ const PostForm = ({ addPost }) => {
       >
         <textarea
           name='text'
-          cols='30'
-          rows='5'
+          className="form-control"
           placeholder='Create a post'
           value={text}
           onChange={e => setText(e.target.value)}
           required
         />
-        <input type='submit' className='btn btn-dark my-1' value='Submit' />
+        <input type='submit' className='btn mt-1 Freelance__Forum__Butoon' value='Post Now' />
       </form>
+    </div>
     </div>
   );
 };

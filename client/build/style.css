@@ -1,0 +1,351 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    color: #6400e4;
+}
+
+a:hover{
+    color: #4c02ad;
+}
+
+.My__Navbar{
+    background-color: #fff;
+    font-weight: 600!important;
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.My__Navbar__Container{
+    box-shadow: 0px 0px 3px #b0b2b3;
+
+}
+
+.My__Nav__Link{
+    color: rgb(44, 44, 44)!important;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.My__Nav__Link:hover{
+    color: rgb(27, 27, 27)!important;
+
+}
+
+.My__Nav__Link__Button{
+    color: rgb(255, 255, 255)!important;
+    font-size: 16px;
+    background-color: #6400e4;
+    border-radius: 2px;
+    margin: 5px;
+    text-align: center;
+}
+
+.My__Nav__Link__Button:hover{
+    color: rgb(255, 255, 255)!important;
+    background-color: #4c02ad;
+
+}
+
+.Landing__Container__Left__IMG{
+    transition: transform 2s;
+    filter: saturate(0);
+}
+
+.Landing__Container__Left__IMG:hover{
+    opacity: 1;
+    filter: saturate(1);
+    filter: drop-shadow(5);
+}
+.LOgin__Page__Image{
+width: 100%;
+}
+
+.Login__Page__Col-6__Left{
+    background-image: url(https://images.unsplash.com/photo-1543269865-f576bdee5d1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    min-height: 700px;
+}
+
+.Login__Page__Left__Col__Text1{
+    color: #fff;
+    background-color: #6400e4;
+    padding: 10px 30px;
+    font-weight: 900;
+    width: fit-content;
+    margin-top: 400px;
+}
+
+.my__Signin__Cont{
+    width: 500px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.my__Signup__Cont{
+    width: 500px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.my__Signin__Head{
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.form-control{
+    height: 60px;
+    border-radius: 2px;
+}
+
+.btn-block{
+    height: 60px;
+    border-radius: 2px;
+    background-color: #6400e4;
+    border-color: #6400e4;
+}
+
+.btn-block:hover{
+    height: 60px;
+    border-radius: 2px;
+    background-color: #4c02ad;
+    border-color: #4c02ad;
+}
+
+.form-control:focus{
+    border-color: #4c0ba0;
+    box-shadow: none!important;
+}
+
+.my__Signin__Link{
+    font-weight: 900;
+}
+
+.my__Signin__Botom__Text{
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.btn-block:focus{
+    background-color: #4c02ad;
+    border-color: #4c02ad; 
+    box-shadow: 0px 6px 15px 0 rgb(154 154 154)!important;
+}
+
+.my__Btn2:hover{
+    background-color: #4c02ad!important;
+    border-color: #4c02ad!important; 
+    box-shadow: 0px 6px 15px 0 rgb(154 154 154)!important;
+}
+
+.my__Btn2:active{
+    background-color: #4c02ad!important;
+    border-color: #4c02ad!important;
+}
+
+.Rgistration__Page__Col_6__Right{
+    background-image: url(https://images.unsplash.com/photo-1542330952-bffc55e812b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    min-height: 700px;
+    background-position: center right;
+}
+
+.Landing__Col__Right__Text{
+    color: #181818;
+    font-weight: 900;
+    font-size: 60px;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.Landing__Col__Right__Button{
+    margin-left: 200px;
+    width: 50%;
+}
+
+.Footer__Container{
+    background-color: #070a14;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Footer__Logo{
+    width: 130px;
+}
+
+.Footer__List__Heading{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+a.Footer__Link{
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer__Paragaraph{
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+}
+
+a.Footer__Link__Social{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+a.Footer__Link__Social:hover{
+    color: #6400e4;
+}
+
+
+@media (max-width: 990px) {
+    .Landing__Col__Right__Text{
+       margin: 0;
+    }
+    .Landing__Col__Right__Button{
+        margin: 0;
+        width: 100%;
+    }
+  }
+
+.Freelance__Profile__BG{
+    border: 1px solid #e3ceff;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.Freelance__Profile__BG:hover{
+    box-shadow: 0px 4px 15px #cccccc;
+}
+
+.Freelance__Round-Img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 30px;
+    border: 3px solid #070a14;
+}
+
+.Freelance__Profile__Detail{
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.Freelance__Name{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.Freelance__Work__Status{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.Freelance__Location{
+    color: #6400e4;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+}
+
+.Freelance__Button__div{
+    margin-right: 10px;
+    margin-top: -20px;
+    margin-top: -40px;
+}
+
+.Freelance__Button{
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: #6400e4;
+    border-color: #6400e4;
+    border-radius: 2px;
+}
+
+.Freelance__Button:hover{
+    background-color:#4c02ad;
+    border-color:#4c02ad;
+}
+
+.Freelance__Skill__Tags{
+    background-color: #4c02ad;
+    color: #fff;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.Freelance__Jumbotron{
+    background-image: url(https://images.unsplash.com/photo-1577035103604-54e9d4f0ca7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+    min-height: 400px;
+    margin-top: 20px;
+    border-radius: 2px;
+
+}
+
+.Freelancer__Page__Jumbotron__Head{
+    color: #fff;
+    background-color: #6400e4;
+    width: fit-content;
+    padding: 30px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.text-primary{
+    color: #6400e4!important;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.Freelance__DEtail__Page__Div{
+    background-color: #6400e4;
+}
+
+.Feeelance__Detail__Page__Image{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.Freelance__Detail__Page__Name{
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.Freelance__Detail__Page__Company{
+    color: #fff;
+    font-size: 20px;
+}
+
+.Freelance__Detail__Page__Location{
+    color: #6400e4;
+    background-color: #fff;
+    width: fit-content;
+    padding: 3px 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+.Feelance__Detail__Page__Icons{
+    color: #fff!important;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.Freelance__Detail__about__Component__Div{
+    text-transform: capitalize;
+}
+
+.Freelance__detail__Page__Company__titel{
+    
+}

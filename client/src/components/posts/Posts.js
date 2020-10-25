@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import PostItem from './PostItem';
@@ -11,18 +11,24 @@ const Posts = ({ getPosts, post: { posts } }) => {
   }, [getPosts]);
 
   return (
-    <Fragment>
-      <h1 className="large text-primary">Posts</h1>
-      <p className="lead">
-        <i className="fas fa-user" /> Welcome
-      </p>
+    <div className="container Post__Cont">
+      <div className="row">
+      <div className="col-lg-2">
+      </div>
+
+      <div className="col-lg-8">
       <PostForm />
       <div className="posts">
         {posts.map((post) => (
           <PostItem key={post._id} post={post} />
         ))}
       </div>
-    </Fragment>
+      </div>
+
+      <div className="col-lg-2">
+      </div>
+      </div>
+    </div>
   );
 };
 

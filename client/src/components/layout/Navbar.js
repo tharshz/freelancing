@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -6,22 +6,22 @@ import { logout } from '../../actions/auth';
 
 const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   const authLinks = (
-    <ul>
-      <li>
-        <Link to="/profiles">Freelancer</Link>
+    <ul className="navbar-nav ml-auto My__Navbar__UL">
+      <li className="nav-item">
+        <Link className="nav-link My__Nav__Link" to="/profiles">Freelancer</Link>
       </li>
-      <li>
-        <Link to="/posts">Posts</Link>
+      <li className="nav-item">
+        <Link className="nav-link My__Nav__Link" to="/posts">Forum</Link>
       </li>
-      <li>
-        <Link to="/dashboard">
-          <i className="fas fa-user" />{' '}
+      <li className="nav-item">
+        <Link className="nav-link My__Nav__Link" to="/dashboard">
+          <i className="" />{' '}
           <span className="hide-sm">Dashboard</span>
         </Link>
       </li>
-      <li>
-        <a onClick={logout} href="#!">
-          <i className="fas fa-sign-out-alt" />{' '}
+      <li className="nav-item">
+        <a className="nav-link My__Nav__Link" onClick={logout} href="#!">
+          <i className="" />{' '}
           <span className="hide-sm">Logout</span>
         </a>
       </li>
@@ -29,28 +29,37 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
   );
 
   const guestLinks = (
-    <ul>
-      {/* <li>
-        <Link to="/profiles">Freelancer</Link>
-      </li> */}
-      <li>
-        <Link to="/register">Register</Link>
+    <ul className="navbar-nav ml-auto My__Navbar__UL">
+      {/* <li className="nav-item">
+        <Link className="nav-link My__Nav__Link" to="/About">About us</Link>
       </li>
-      <li>
-        <Link to="/login">Login</Link>
+      <li className="nav-item">
+        <Link className="nav-link My__Nav__Link" to="/register">Register</Link>
+      </li> */}
+      <li className="nav-item">
+        <Link className="nav-link My__Nav__Link__Button" to="/dashboard">Hire a Freelancer</Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link My__Nav__Link__Button" to="/dashboard">Become a Freelancer</Link>
       </li>
     </ul>
+    
   );
 
   return (
-    <nav className="navbar bg-dark">
-      <h1>
-        <Link to="/">
-          <i className="fas fa-code" /> SEDORK
-        </Link>
-      </h1>
-      <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
+     <div className="container-fluid My__Navbar__Container">
+        <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-light My__Navbar">
+        <a className="navbar-brand" href="/"><img style={{width: "130px"}} src="https://gist.githubusercontent.com/prashankhan/ec9fe8095adc30cacf33735b7d5d5853/raw/84e264cac80b2e1b1dfaf59e12c32ea9ae5d10ad/SEDork%2520logo.svg" alt="img3"></img></a>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      {isAuthenticated ? authLinks : guestLinks}
+      </div>
     </nav>
+      </div>
+     </div>
   );
 };
 

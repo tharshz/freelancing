@@ -6,8 +6,8 @@ import moment from 'moment';
 const ProfileExperience = ({
   experience: { company, title, location, current, to, from, description }
 }) => (
-  <div>
-    <h3 className="text-dark">{company}</h3>
+  <div className='Freelance__Detail__about__Component__Div p-2 text-center'>
+    <h3 className="Freelance__detail__Page__Company__titel">{company}</h3>
     <p>
       <Moment format="YYYY/MM/DD">{moment.utc(from)}</Moment> -{' '}
       {!to ? ' Now' : <Moment format="YYYY/MM/DD">{moment.utc(to)}</Moment>}

@@ -1,137 +1,46 @@
-/*!
+ import React from 'react'
+// import {Icon} from 'antd';
 
-=========================================================
-* BLK Design System React - v1.1.0
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import React from "react";
-import { Link } from "react-router-dom";
-// reactstrap components
-import {
-  Button,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col,
-  UncontrolledTooltip
-} from "reactstrap";
-
-class Footer extends React.Component {
-  render() {
+function Footer() {
     return (
-      <footer className="footer">
-        <Container>
-          <Row>
-            <Col md="3">
-              <h1 className="title">SEDORK</h1>
-            </Col>
-            <Col md="3">
-              <Nav>
-                <NavItem>
-                  <NavLink to="/" tag={Link}>
-                    Home
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/landing-page" tag={Link}>
-                    Landing
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/register-page" tag={Link}>
-                    Register
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink to="/profile-page" tag={Link}>
-                    Profile
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Col>
-            <Col md="3">
-              <Nav>
-                <NavItem>
-                  <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
-                    Contact Us
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://creative-tim.com/about-us?ref=blkdsr-footer">
-                    About Us
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://creative-tim.com/blog?ref=blkdsr-footer">
-                    Blog
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://opensource.org/licenses/MIT">
-                    License
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Col>
-            <Col md="3">
-              <h3 className="title">Follow us:</h3>
-              <div className="btn-wrapper profile">
-                <Button
-                  className="btn-icon btn-neutral btn-round btn-simple"
-                  color="default"
-                  href="https://twitter.com/creativetim"
-                  id="tooltip622135962"
-                  target="_blank"
-                >
-                  <i className="fab fa-twitter" />
-                </Button>
-                <UncontrolledTooltip delay={0} target="tooltip622135962">
-                  Follow us
-                </UncontrolledTooltip>
-                <Button
-                  className="btn-icon btn-neutral btn-round btn-simple"
-                  color="default"
-                  href="https://www.facebook.com/creativetim"
-                  id="tooltip230450801"
-                  target="_blank"
-                >
-                  <i className="fab fa-facebook-square" />
-                </Button>
-                <UncontrolledTooltip delay={0} target="tooltip230450801">
-                  Like us
-                </UncontrolledTooltip>
-                <Button
-                  className="btn-icon btn-neutral btn-round btn-simple"
-                  color="default"
-                  href="https://dribbble.com/creativetim"
-                  id="tooltip318450378"
-                  target="_blank"
-                >
-                  <i className="fab fa-dribbble" />
-                </Button>
-                <UncontrolledTooltip delay={0} target="tooltip318450378">
-                  Follow us
-                </UncontrolledTooltip>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </footer>
-    );
-  }
+        <div className="container-fluid Footer__Container pb-1 mt-5">
+            <div className="container-fluid pr-5 pl-5">
+                <div className="row">
+                <div className="col-lg-3 text-center">
+            <img className="Footer__Logo" src="https://gist.githubusercontent.com/prashankhan/944e1588df4eed7057d21de9cf636f81/raw/4392cab20854095f4ff6eb0b6cb81f5383ec970f/tharsha%2520logo2.svg" alt="logo"></img>
+            <p className="footer__Paragaraph">We Will World's largest freelancing and crowdsourcing marketplace.,</p>
+            </div>
+
+            <div className="col-lg-3">
+            <h4 className="Footer__List__Heading">Pages</h4>
+                <a className="Footer__Link" href="/">About Us</a><br/>
+                {/* <a className="Footer__Link"  href="/">Contact Us</a><br/> */}
+                <a className="Footer__Link" href="/">FAQ</a><br/>
+                <a className="Footer__Link" href="/">What We Do?</a><br/> 
+            </div>
+
+            <div className="col-lg-3">
+            <h4 className="Footer__List__Heading">Contact Us</h4>
+            <p className="footer__Paragaraph">0771234567</p>
+            <p className="footer__Paragaraph">Tharshz1607@gmail.com</p>
+            </div>
+
+            <div className="col-lg-3">
+            <h4 className="Footer__List__Heading">Follow us</h4>
+                <a className="Footer__Link__Social" href="http://www.linkedin.com/in/tharshzlog"><i class="fab fa-facebook-f"></i></a>
+                <a className="Footer__Link__Social"  href="http://www.linkedin.com/in/tharshzlog"><i class="fab fa-twitter"></i></a>
+                <a className="Footer__Link__Social" href="http://www.linkedin.com/in/tharshzlog"><i class="fab fa-instagram"></i></a>
+                <a className="Footer__Link__Social" href="http://www.linkedin.com/in/tharshzlog"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+                </div>
+            </div>
+            <hr/> 
+            <div className="text-center mt-3 mb-2"> 
+           <p className="Footer__List__Heading"> Copyright © 2020 SEDORK- All Rights Reserved. </p>
+            </div>
+        </div>
+    )
 }
 
-export default Footer;
+export default Footer

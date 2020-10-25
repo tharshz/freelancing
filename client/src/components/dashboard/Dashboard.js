@@ -18,8 +18,15 @@ const Dashboard = ({
   }, [getCurrentProfile]);
 
   return (
-    <Fragment>
-      <h1 className="large text-primary">Dashboard</h1>
+    <div className="container-fluid">
+    <div className="container">
+      <div className="row">
+          <div className="col-lg-1">
+
+          </div>
+
+          <div className="col-lg-10 Dashbord__Cont">
+          <Fragment>
       <p className="lead">
         <i className="fas fa-user" /> Welcome {user && user.name}
       </p>
@@ -38,13 +45,33 @@ const Dashboard = ({
         </Fragment>
       ) : (
         <Fragment>
-          <p>You have not yet setup a profile, please add some info</p>
-          <Link to="/create-profile" className="btn btn-primary my-1">
-            Create Profile
+          <div className="container-fluid mt-5 mb-5">
+          <div className="row">
+          {/* <p>You Want To Have Join The Freelancer yet setup a profile, please add some info</p> */}
+          <div>
+          <Link to="/create-profile" className="btn btn-primary Freelance__Button">
+          Become a Freelancer
           </Link>
+          <Link to="/profiles" className="btn btn-primary Freelance__Button">
+          Hire a Freelancer
+          </Link>
+          </div>
+          <div className="col-lg-6">
+            <img className="Profile__Update__Img" src="https://gist.githubusercontent.com/prashankhan/d41dc09a37f1bd660527ff0a876949fa/raw/8583275cfcd9e444b2d86dbb19c2b6745b7fc589/update.svg" alt="img2"></img>
+        </div>
+          </div>
+          </div>
         </Fragment>
       )}
     </Fragment>
+          </div>
+
+          <div className="col-lg-1">
+
+          </div>
+      </div>
+    </div>
+    </div>
   );
 };
 
