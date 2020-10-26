@@ -307,6 +307,7 @@ a.Footer__Link__Social:hover{
   text-transform: capitalize;
   font-weight: 700;
   font-size: 25px;
+  
 }
 
 .Freelance__DEtail__Page__Div{
@@ -398,7 +399,7 @@ a.Footer__Link__Social:hover{
   font-size: 14px;
   text-transform: capitalize;
   font-weight: 800;
-  margin-top: -16px;
+  margin-top: 16px;
 }
 
 .Freelance__Post__Items__Name:hover{
@@ -408,17 +409,17 @@ a.Footer__Link__Social:hover{
 .Freelance__Post__Items__Name__Honor{
   font-size: 13px;
   font-style: italic;
+  line-height: 3.0;
 }
 
 .post-date{
   font-size: 14px;
-  margin-top: -8px;
 }
 
 .Freelance__Post__ITem__Text{
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 15px;
+  line-height: 3.5;
 
 }
 

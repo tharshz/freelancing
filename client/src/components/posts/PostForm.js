@@ -10,7 +10,7 @@ const PostForm = ({ addPost }) => {
     <div className='container'>
     <div className='post-form'>
       <div className=''>
-        <h3 className="text-primary">Start a Discussion topic.</h3>
+        <h3 className="text-primary mt-5">Start a Discussion topic.</h3>
       </div>
       <form
         className='form'
