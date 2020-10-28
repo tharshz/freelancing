@@ -26,15 +26,15 @@ let smtpTransport = nodemailer.createTransport({
    service:'Gmail' ,
    port:465,
    auth:{
-    user:'tharshz1607@gmail.com',
-    pass:"anutharshz???"
+    user:'sedorksedork@gmail.com',
+    pass:"Sedork01???@"
    }
 });
 
 
 let mailOptions={
-    from:'tharshz1607@gmail.com',
-    to:'tharshz1607@gmail.com',
+    from:'sedorksedork@gmail.com',
+    to:'sedorksedork@gmail.com',
     subject:`Message from ${data.name}`,
     html:`
     

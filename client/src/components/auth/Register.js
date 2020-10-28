@@ -14,7 +14,6 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     password2: ''
     // freelancer:'v1'
   });
-
   const { name, email, password, password2} = formData;
 
   const onChange = (e) =>

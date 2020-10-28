@@ -491,7 +491,17 @@ a.Footer__Link__Social:hover{
   min-height: 700px;
   background-size: cover;
 }
-
+.Freelance__Contact__Col8{
+  background-image: url(https://cdn2.hubspot.net/hubfs/95135/Imported_Blog_Media/focus-group-community-e1410977042252-2.jpg);
+  min-height: 700px;
+  background-size: cover;
+}
+.post_me{
+  width: 600px !important;
+}
+.mt_my{
+  margin-top: 200px;
+}
 .Frelance__Contact__form{
   margin-top: 40px;
 }

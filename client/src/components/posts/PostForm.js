@@ -13,7 +13,7 @@ const PostForm = ({ addPost }) => {
         <h3 className="text-primary mt-5">Start a Discussion topic.</h3>
       </div>
       <form
-        className='form'
+        className='form mb-5 '
         onSubmit={e => {
           e.preventDefault();
           addPost({ text });
