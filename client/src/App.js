@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer'
 import Landing from './components/layout/Landing';
 import Routes from './components/routing/Routes';
 import { LOGOUT } from './actions/types';
+import About from './components/layout/About';
 
 
 // Redux
@@ -36,6 +37,7 @@ const App = () => {
         <Fragment>
           <Navbar />
           <Switch>
+          <Route exact path="/About" component={About} />
             <Route exact path="/" component={Landing} />
             <Route component={Routes} />
           </Switch>

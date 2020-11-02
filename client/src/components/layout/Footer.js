@@ -14,7 +14,7 @@ function Footer() {
 
             <div className="col-lg-3">
             <h4 className="Footer__List__Heading">Pages</h4>
-                <a className="Footer__Link" href="/">About Us</a><br/>
+                <a className="Footer__Link" href="/About">About Us</a><br/>
                 {/* <a className="Footer__Link"  href="/">Contact Us</a><br/> */}
                 <a className="Footer__Link" href="/">FAQ</a><br/>
                 <a className="Footer__Link" href="/">What We Do?</a><br/> 
@@ -23,7 +23,7 @@ function Footer() {
             <div className="col-lg-3">
             <h4 className="Footer__List__Heading">Contact Us</h4>
             <p className="footer__Paragaraph">0771234567</p>
-            <p className="footer__Paragaraph">Tharshz1607@gmail.com</p>
+            <p className="footer__Paragaraph">sedorksedork@gmail.com</p>
             </div>
 
             <div className="col-lg-3">

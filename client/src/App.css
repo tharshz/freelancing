@@ -570,3 +570,105 @@ padding:3px;
 .msgAppear{
   display: block;
 }
+/* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+
+.my__Jumbortan{
+  background-image: url('https://images.unsplash.com/photo-1500021804447-2ca2eaaaabeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px!important;
+  margin-top: 80px;
+  background-position: center;
+
+}
+
+.h1__Jumbortan{
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0px 0px 5px #202121;
+}
+
+.my__Btn{
+  background-color: #0086ff;
+  border: 1px solid #0086ff;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.my__Btn:hover{
+  background-color: #28a745;
+  border: 1px solid #28a745;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 20px;
+  opacity: 1!important;
+}
+
+@media only screen and (max-width: 768px){
+  .my__Jumbortan{
+    max-height: 200px!important;
+    margin-top: 90px;
+    background-position: center;
+  
+  }
+
+  .h1__Jumbortan{
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0px 0px 5px #202121;
+    font-size: 40px;
+  }
+  
+}
+
+.my__Icon{
+  font-size: 60px;
+  color: #005acf;
+}
+
+.mt-15{
+  padding-top:200px !important;
+}
+
+.my__Home__Paracol__H1{
+  font-weight: 800;
+}
+.jumbo{
+  background: url(https://images.unsplash.com/photo-1542330952-bffc55e812b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  min-height: 700px !important;
+  background-repeat: no-repeat;
+  /* background: center; */
+  background-size: cover !important;
+  background-position: auto !important; 
+  /* min-width:100%; */
+  margin-top: 75px !important;
+
+}
+@media only screen and (max-width: 768px){
+  .jumbo{
+    background: url(https://images.unsplash.com/photo-1542330952-bffc55e812b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    min-height: 700px !important;
+    background-repeat: no-repeat;
+    /* background: center; */
+    background-size: cover !important;
+    background-position: center !important; 
+    /* min-width:100%; */
+    margin-top: 75px !important;
+  
+  }
+}
+.form{
+  box-shadow: 2px 2px 11px 2px #4747473d;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+}
+.my_post{
+  margin-top: -200px !important;
+}
+
+.my_pform{
+  box-shadow: 0 0 3px 0px #948b8b !important;
+}
