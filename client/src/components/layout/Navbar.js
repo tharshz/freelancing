@@ -37,7 +37,7 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
         <Link className="nav-link My__Nav__Link" to="/register">Register</Link>
       </li> */}
       <li className="nav-item">
-        <Link className="nav-link My__Nav__Link__Button" to="/profiles">Hire a Freelancer</Link>
+        <Link className="nav-link My__Nav__Link__Button" to="/register">Hire a Freelancer</Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link My__Nav__Link__Button" to="/dashboard">Become a Freelancer</Link>
