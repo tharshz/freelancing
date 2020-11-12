@@ -14,9 +14,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(cors());
 
 
-// app.get('/', (req,res)=>{
-//     res.send('welcome to my forma');
-// })
 
 app.post('/api/forma', (req,res)=>{
 
@@ -70,7 +67,7 @@ smtpTransport.sendMail(mailOptions, (error, response)=>{
 
 })
 
-//....................................
+//............tharshz database........................
 // const app = express();
 
 // Connect Database
